@@ -1,8 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    width: 100%;
-
 }
 
 body{
@@ -14,6 +12,13 @@ video{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    width: 100%;
+}
+
+.cont{
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
 }
 
 .text{
@@ -24,6 +29,7 @@ video{
     transform: translate(-50%, -50%);
     display: flex;
     font-family: 'Rubik Iso', cursive;
+    width: 100%;
 }
 
 .text span{
@@ -37,6 +43,7 @@ video{
     animation: reveal 2.5s linear forwards;
     opacity: 0;
     filter: blur(13px);
+    width: 100%;
 }
 
 @keyframes reveal{
