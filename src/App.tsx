@@ -21,8 +21,8 @@ const [intro, setIntro] = useState(true);
   return (
     <>
       
-      {intro? <FlamesComponent/> : <MainPage /> }
-
+      {/* {intro? <FlamesComponent/> : <MainPage /> } */}
+      <MainPage />
     </>
   );
 }

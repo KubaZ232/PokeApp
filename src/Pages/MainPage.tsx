@@ -1,55 +1,37 @@
 import React,{useEffect, useState} from 'react'
 import { motion, useAnimationControls } from "framer-motion"
 
-const variants = {
-  closed: { opacity: 0, y: "-3%" },
-  open: { opacity: 1, y:0 } 
-}
+
 
 const MainPage = () => {
-  // const [ isOpen, setIsOpen ] = useState(false);
-  // Control for specifying when animation should start
-  const controls = useAnimationControls();
-
-  // useEffect(() => {
-  //   let mainPagePhotoTimer = setTimeout(
-  //     () => {
-  //       setIsOpen(true)
-  //       console.log("start timer");
-  //     }
-  //   , 4500)
-  //   return () => {
-  //     clearTimeout(mainPagePhotoTimer);
-  //     console.log("cleared timer");
-  //   }
-  // },[]);
-  
-
+ 
   return (
     <div 
       className="w-full h-screen bg-center bg-cover bg-pokeBlack ShowAnimation"
       
     >
-      <motion.div 
+      <div 
         className="flex justify-center items-center"
-        // animate={isOpen ? "open" : "closed"}
-        // variants={variants}
       >
   
         <div className=" m-auto ">
           
             <img
-              // src="/poke1.jpg"
-              src="/pokeBig.jpg"
-              className="flex-auto object-center max-h-[42rem]"
+              src="/mobileTitle.jpg"
+              className="flex-auto object-center p-6 absolute left-1/2 transform -translate-x-1/2 inset-x-0 top-14  "
             />
             
-              <input className='absolute p-1  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'/>
-              <p className="text-white text-center cursor-pointer" >&#169; Jakub Zaręba </p>
+              <input className='absolute p-1 z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'/>
+
+            <img
+              src="/MobilePokemonBottom.jpg"
+              className="flex-auto object-center p-6 absolute inset-x-0 customMobile:bottom-12 laptop:bottom-5 md:bottom-14 left-1/2 transform -translate-x-1/2 -translate-y-1/2'"
+            />
+              <p className="text-white text-center cursor-pointer absolute inset-x-0 bottom-9" >&#169; Jakub Zaręba </p>
         </div>
         
       
-      </motion.div>
+      </div>
       
     </div>
   )

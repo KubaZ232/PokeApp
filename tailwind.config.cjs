@@ -12,6 +12,14 @@ module.exports = {
       colors: {
         'pokeBlack': '#111111',
       },
+      screens: {
+        'laptop': [
+          {'min': '668px', 'max': '1537px'},
+        ],
+        'customMobile' : [
+          {'max': '667px'}
+        ],
+      }
     },
   },
   plugins: [],
