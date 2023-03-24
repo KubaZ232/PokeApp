@@ -27,7 +27,7 @@ const MainPage = () => {
 
   return (
     <div 
-      className="w-full h-screen bg-center bg-cover bg-pokeBlack"
+      className="w-full h-screen bg-center bg-cover bg-pokeBlack ShowAnimation"
       
     >
       <motion.div 
@@ -39,12 +39,13 @@ const MainPage = () => {
         <div className=" m-auto ">
           
             <img
-              src="../public/poke1.jpg"
+              // src="/poke1.jpg"
+              src="/pokeBig.jpg"
               className="flex-auto object-center max-h-[42rem]"
             />
             
-              {/* <input className='absolute p-2  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'/> */}
-              {/* <p className="text-white text-center cursor-pointer" onClick={() => setIsOpen(isOpen => !isOpen)}>&#169; Jakub Zaręba </p> */}
+              <input className='absolute p-1  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'/>
+              <p className="text-white text-center cursor-pointer" >&#169; Jakub Zaręba </p>
         </div>
         
       

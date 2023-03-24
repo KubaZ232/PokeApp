@@ -94,3 +94,16 @@ span:nth-child(7){
     -webkit-animation-delay: 4.9s ;
     -moz-animation-delay: 4.9s ;
 }
+
+
+/* The animation code */
+@keyframes show {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  /* The element to apply the animation to */
+  .ShowAnimation {
+    animation-name: show;
+    animation-duration: 5s;
+  }
