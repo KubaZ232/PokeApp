@@ -1,6 +1,6 @@
 import React,{useEffect, useState} from 'react'
 import { motion, useAnimationControls } from "framer-motion"
-
+import InputComponent from '../components/InputComponent'
 
 
 const MainPage = () => {
@@ -21,8 +21,8 @@ const MainPage = () => {
               className="flex-auto object-center p-6 absolute left-1/2 transform -translate-x-1/2 inset-x-0 top-14  "
             />
             
-              <input className='absolute p-1 z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'/>
-
+              {/* <input className='absolute p-1 z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'/> */}
+              <InputComponent/>
             <img
               src="/MobilePokemonBottom.jpg"
               className="flex-auto object-center p-6 absolute inset-x-0 customMobile:bottom-12 laptop:bottom-5 md:bottom-14 left-1/2 transform -translate-x-1/2 -translate-y-1/2'"

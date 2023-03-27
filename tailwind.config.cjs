@@ -11,6 +11,7 @@ module.exports = {
       }),
       colors: {
         'pokeBlack': '#111111',
+        'poke-green' : '#059669',
       },
       screens: {
         'laptop': [
@@ -22,5 +23,5 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [] ,
 }

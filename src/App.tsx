@@ -14,7 +14,6 @@ const [intro, setIntro] = useState(true);
     , 9000)
     return () => {
       clearTimeout(introTimeout);
-      console.log("cleared timer");
     }
   },[]);
 
