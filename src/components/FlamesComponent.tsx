@@ -4,7 +4,7 @@ import './FlamesComponent.css';
 const FlamesComponent = () => {
   return (
     <div className='cont'>
-        <video src='video.mp4' autoPlay muted ></video>
+        <video id="flamesVideoID" src='video.mp4' autoPlay muted ></video>
         <div className='text'>
             <span>P</span>
             <span>O</span>

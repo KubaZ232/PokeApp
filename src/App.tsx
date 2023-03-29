@@ -1,6 +1,4 @@
 import { useState, useEffect } from "react";
-import { createPortal } from 'react-dom';
-import "./App.css";
 import FlamesComponent from "./components/FlamesComponent";
 import MainPage from "./Pages/MainPage";
 
@@ -20,8 +18,8 @@ const [intro, setIntro] = useState(true);
   return (
     <>
       
-      {/* {intro? <FlamesComponent/> : <MainPage /> } */}
-      <MainPage />
+      {intro? <FlamesComponent/> : <MainPage /> }
+      {/* <MainPage /> */}
     </>
   );
 }

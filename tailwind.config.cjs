@@ -11,9 +11,12 @@ module.exports = {
       }),
       colors: {
         'pokeBlack': '#111111',
-        'poke-green' : '#059669',
+        'poke-emerald' : '#059669',
+        'poke-emerald-strong' : '#064e3b',
         'poke-grey' : '#d4d4d4',
         'poke-red' : '#f43f5e',
+        'poke-red-strong' : '#991b1b',
+        'poke-yellow': '#fefce8',
       },
       screens: {
         'laptop': [
